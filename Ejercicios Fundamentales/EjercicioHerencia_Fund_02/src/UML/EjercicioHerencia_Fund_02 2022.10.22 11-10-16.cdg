@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EjercicioHerencia_Fund_02">
+  <ClassDiagramComponents>
+    <Class name="Electrodomesticos" package="" visibility="public" xPosition="244.0" yPosition="3.0">
+      <Fields>
+        <Field name="precio" type="Integer" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="consumo" type="char" visibility="private"/>
+        <Field name="peso" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="comprobarConsumoEnergetico" returnType="char" visibility="public">
+          <Argument type="char" name="letra"/>
+        </Method>
+        <Method name="comprobarColor" returnType="String" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="crearElectrodomestico" returnType="void" visibility="public"/>
+        <Method name="precioFinal" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lavadora" package="" visibility="public" xPosition="86.0" yPosition="309.0">
+      <Fields>
+        <Field name="carga" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearLavadora" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Televisor" package="" visibility="public" xPosition="477.0" yPosition="309.0">
+      <Fields>
+        <Field name="pulgadas" type="double" visibility="private"/>
+        <Field name="sintonizadorTDT" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearTelevisor" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Lavadora" target="Electrodomesticos"/>
+    <IsRelation name="is" source="Televisor" target="Electrodomesticos"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
