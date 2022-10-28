@@ -6,6 +6,8 @@ public class Televisor extends Electrodomesticos {
 
     private boolean sintonizadorTDT;
 
+    String sint ="";
+    
     public Televisor() {
     }
 
@@ -23,7 +25,12 @@ public class Televisor extends Electrodomesticos {
         this.pulgadas = pulgadas;
     }
 
-    public boolean isSintonizadorTDT() {
+    public boolean getSintonizadorTDT() {
+        if (sintonizadorTDT=true) {
+            sint = " Tiene Sintonizador Digital";
+        }else{
+            sint = " No tiene Sintonizador Digital";
+        }
         return sintonizadorTDT;
     }
 
@@ -32,10 +39,11 @@ public class Televisor extends Electrodomesticos {
     }
     
 
-        @Override
+    @Override
     public String toString() {
-        return super.toString() + pulgadas.toString();
-        
+       return " El Electrodomestico TELEVISOR [ Tiene un Valor de: $ " + super.getPrecio() +
+               ", es de color :" + super.getColor() + ", su consumo es del Tipo " + super.getConsumo() + ", con un peso de: " + super.getPeso() + 
+               " kg, tiene " + pulgadas + " Pulgadas. ]";
     }
     
     

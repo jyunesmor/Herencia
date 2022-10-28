@@ -54,11 +54,4 @@ public class Electrodomesticos {
         this.peso = peso;
     }
 
-    @Override
-    public String toString() {
-        return "Electrodomesticos{" + "precio=" + precio + ", color=" + color + ", consumo=" + consumo + ", peso=" + peso + '}';
-    }
-
-    
- 
 }
