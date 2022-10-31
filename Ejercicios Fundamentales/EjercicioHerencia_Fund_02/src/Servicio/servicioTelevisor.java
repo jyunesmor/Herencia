@@ -34,7 +34,7 @@ public class servicioTelevisor extends servicioElectrodomesticos {
         Integer val_carga = 0;
         Integer val_sint = 0;
         if (pulgadas > 40) {
-            val_carga = (e.getPrecio() *30)/100;
+            val_carga = (e.getPrecio()*30)/100;
         }
         if (sintonizador == true) {
             val_sint = 500;

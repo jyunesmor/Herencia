@@ -123,7 +123,8 @@ public class servicioElectrodomesticos {
         Integer precio_tel= 0;
         Integer precio_ele= 0;
         for (Electrodomesticos e : electro) {
-          precio_ele = precio_ele + e.getPrecio();
+//            precioFinal();
+            precio_ele = precio_ele + e.getPrecio();
           if(electro.get(0) instanceof Lavadora)  // Determinar el valor de todas las Lavadoras
           { 
             precio_lav = precio_lav + electro.get(0).getPrecio();
