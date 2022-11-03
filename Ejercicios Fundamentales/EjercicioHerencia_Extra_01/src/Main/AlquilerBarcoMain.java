@@ -5,6 +5,11 @@
  */
 package Main;
 
+
+import Servcio.servicioAlquiler;
+
+
+
 /**
  *
  * @author Juan
@@ -15,7 +20,19 @@ public class AlquilerBarcoMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+     
+        servicioAlquiler sa = new servicioAlquiler();
+
+        
+        
+      sa.crearBarco();
+      sa.crearAlquiler();
+  
+      
+        
+        
+        
+        
     }
     
 }
